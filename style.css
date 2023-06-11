@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  /* min-height: 100vh; */
+  /* border: 3px solid pink; */
+  /* Weights: 200, 400, 600 */
+}
+
+header {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* padding: 1.5rem; */
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1.2rem;
+}
+
+header p {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 1.2rem;
+}
+
+/* img {
+  position: relative;
+  left: 180px;
+} */
+
+.main p {
+  color: hsl(229, 6%, 66%);
+}
+
+.main h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+.light-h1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.dark-h1 {
+  font-weight: 600;
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+  border-radius: 6px;
+  background-color: white;
+  padding: 1.5rem;
+  /* min-height: 90%; */
+  /* border: 2px solid yellow; */
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 2rem;
+}
+
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  bottom: 50%;
+}
+
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  top: 50%;
+}
+
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.team-builder *,
+.karma *,
+.calculator *,
+.supervisor * {
+  padding: 0.5rem;
+}
+
+.image-container {
+  display: flex;
+  /* margin-left: auto; */
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* img {
+  margin-left: auto;
+  display: inline-block;
+} */
